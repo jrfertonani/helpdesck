@@ -1,13 +1,13 @@
-package com.junior.helpdesck.enums;
+package com.junior.helpdesck.domain.enums;
 
-public enum Prioridade {
+public enum Perfil {
 
-    BAIXA(0,"BAIXA"), MEDIA(1,"MEDIA"), ALTA(2,"ALTA");
+    ADMIN(0,"ROLE_ADMIN"), CLIENTE(1,"ROLE_ADMIN"), TECNICO(2,"ROLE_ADMIN");
 
     private Integer codigo;
     private String descricao;
 
-    Prioridade(Integer codigo, String descricao) {
+    Perfil(Integer codigo, String descricao) {
         this.codigo = codigo;
         this.descricao = descricao;
     }
@@ -20,16 +20,16 @@ public enum Prioridade {
         return descricao;
     }
 
-    public static Prioridade toEnum(Integer cod) {
+    public static Perfil toEnum(Integer cod) {
         if (cod == null) {
             return null;
         }
-        for (Prioridade x : Prioridade.values()) {
+        for (Perfil x : Perfil.values()) {
             if(cod.equals(x.getCodigo())){
             return x;
         }
     }
-        throw new IllegalArgumentException("Prioridade invalida");
+        throw new IllegalArgumentException("Perfil invalido");
     }
 
 }
