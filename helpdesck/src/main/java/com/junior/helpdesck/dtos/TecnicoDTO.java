@@ -3,10 +3,6 @@ package com.junior.helpdesck.dtos;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.junior.helpdesck.domain.Tecnico;
 import com.junior.helpdesck.domain.enums.Perfil;
-import jakarta.persistence.CollectionTable;
-import jakarta.persistence.Column;
-import jakarta.persistence.ElementCollection;
-import jakarta.persistence.FetchType;
 
 import java.io.Serializable;
 import java.time.LocalDate;
