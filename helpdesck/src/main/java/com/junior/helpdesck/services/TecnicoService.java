@@ -17,7 +17,7 @@ import java.util.Optional;
 
 
 @Service
-public class TecnicosService {
+public class TecnicoService {
 
 
     @Autowired
