@@ -1,9 +1,13 @@
 package com.junior.helpdesck.repositories;
 
-import com.junior.helpdesck.domain.Tecnico;
+import com.junior.helpdesck.domain.Pessoa;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 @Repository
-public interface TecnicoRepository extends JpaRepository<Tecnico, Integer> {
+public interface PessoaRepository extends JpaRepository<Pessoa, Integer> {
+    Optional<Pessoa> findByCpf(String cpf);
+    Optional<Pessoa> findByEmail(String email);
 }

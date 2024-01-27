@@ -1,4 +1,4 @@
-package com.junior.helpdesck.resources.exceptions;
+package com.junior.helpdesck.resources.excepitions;
 
 import java.io.Serializable;
 
